@@ -1,0 +1,90 @@
+.cartPage {
+  padding: 20px;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: auto 100px 1fr auto;
+  align-items: center; /* Вирівнює всі елементи по центру вертикалі */
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cartItemImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cartItemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.cartItemDetails h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.cartItemDetails p {
+  margin: 0;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+.removeButton {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #c2185b;
+}
+
+.orderButton {
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.orderButton:hover {
+  background-color: #e91e63;
+  transform: translateY(-2px);
+}
+
+.cartItemSelected {
+  background-color: #fce4ec;
+  border: 2px solid #e91e63;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}

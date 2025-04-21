@@ -1,0 +1,24 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 20px;
+  }
+  
+  .infoBlock {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+  
